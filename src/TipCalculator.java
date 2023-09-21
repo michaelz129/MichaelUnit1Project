@@ -10,11 +10,13 @@ public class TipCalculator {
     System.out.println("What is the tip percent?0-100: ");
     double percent = scan.nextInt()/100;
     while(cost != -1){
+        totalCost+=cost;
         System.out.print("Enter a cost in dollar and cent");
         cost=scan.nextDouble();
-        totalCost+=cost;
+
     }
-    System.out.println(totalCost);
+    System.out.println("Total bill before tip:" + totalCost);
+    System.out.println("Total percentage: " + percent*100 + "%'");
 
     }
 }
