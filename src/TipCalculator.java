@@ -13,7 +13,7 @@ public class TipCalculator {
     double percent = scan.nextInt();
     while(cost != -1){
         totalCost+=cost;
-        System.out.print("Enter a cost in dollar and cent");
+        System.out.print("Enter a cost in dollar and cent:");
         cost=scan.nextDouble();
 
     }
@@ -25,7 +25,7 @@ public class TipCalculator {
     System.out.println("Total cost with tip: " + String.format("%.2f",(totalCost+tp)));
     System.out.println("Per person cost before tp: " + ppcbt);
     System.out.println("Tip per person: " + tp/people);
-    System.out.print("Total cost per person: ");
+    System.out.print("Total cost per person: " + String.format("%.2f",((totalCost+tp)/people)));
 
 
     }
